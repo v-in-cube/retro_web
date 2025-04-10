@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthogonal Tree Visualization with Feedback</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        svg {
+            width: 100%;
+            height: 100vh;
+            background-color: #fff;
+        }
+
+        .feedback-section {
+            margin: 10px 0;
+        }
+
+        .feedback-dropdown, .feedback-text {
+            display: none;
+            margin-top: 5px;
+        }
+
+        text {
+            font-size: 12px;
+            fill: #333;
+        }
+
+        .feedback-button button {
+            font-size: 10px;
+            background-color: #69b3a2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .feedback-button button:hover {
+            background-color: #5a9e90;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+
+        .tree-container {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 2px;
+        }
+
+        .node circle {
+            fill: teal;
+            stroke: #fff;
+            stroke-width: 2px;
+        }
+
+        .node image {
+            cursor: pointer;
+        }
+
+        .feedback-button button {
+            cursor: pointer;
+        }
+        .tree-container {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+
+.node circle {
+    fill: teal;
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.node image {
+    cursor: pointer;
+}
+
+.feedback-button button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-button button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.feedback-button button.feedback-sent {
+    background-color: #FFA500;  /* Orange color for sent feedback */
+    color: white;
+}
+
+.reaction-image {
+    pointer-events: none;
+}
+
+#feedback-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+}
+    </style>
+</head>
+<body>
+    <svg id="tree"></svg>
+    <button class="submit-button" onclick="submitFeedback()">Submit Feedback</button>
+
+    <script>
+        // Load JSON data containing multiple trees from Flask API
+        d3.json("/get_multiple_trees").then(data => {
+            const container = d3.select("#trees-container");
+
+            // Iterate over each reaction tree
+            data.forEach((treeData, index) => {
+                // Create a new container for each tree
+                const treeContainer = container.append("div")
+                    .attr("class", "tree-container")
+                    .attr("id", `tree-${index}`);
+
+                // Set dimensions for the tree
+                const width = 1200;
+                const height = 400;  // Reduced height for more compact trees
+                const margin = { top: 20, right: 20, bottom: 30, left: 20 };
+
+                const svg = treeContainer.append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+
+                const g = svg.append("g")
+                    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+                // Tree layout
+                const treeLayout = d3.tree().size([height - margin.top - margin.bottom, width - margin.left - margin.right]);
+
+                const root = d3.hierarchy(treeData);
+
+                // Compute the tree layout
+                treeLayout(root);
+
+                // Links
+                g.selectAll(".link")
+                    .data(root.links())
+                    .enter()
+                    .append("path")
+                    .attr("class", "link")
+                    .attr("d", d3.linkHorizontal()
+                        .x(d => d.y)
+                        .y(d => d.x)
+                    );
+
+                // Nodes
+                const node = g.selectAll(".node")
+                    .data(root.descendants())
+                    .enter()
+                    .append("g")
+                    .attr("class", d => `node ${d.data.type}`)
+                    .attr("transform", d => `translate(${d.y},${d.x})`);
+
+                // Display molecule image for molecule nodes
+                node.filter(d => d.data.type === "mol")
+                    .append("image")
+                    .attr("xlink:href", d => d.data.image_path)
+                    .attr("x", -30)
+                    .attr("y", -30)
+                    .attr("width", 60)
+                    .attr("height", 60);
+
+                // Add reaction nodes as dark teal circles
+                const reactionNode = node.filter(d => d.data.type === "reaction");
+
+                reactionNode.append("circle")
+                    .attr("r", 15)
+                    .attr("fill", "teal");
+
+                // Add reaction image (initially hidden)
+                reactionNode.append("image")
+                    .attr("class", "reaction-image")
+                    .attr("xlink:href", d => d.data.image_path)
+                    .attr("x", -30)
+                    .attr("y", -30)
+                    .attr("width", 60)
+                    .attr("height", 60)
+                    .style("display", "none");
+
+                // Add click event to toggle reaction image
+                reactionNode.on("click", function(event, d) {
+                    const image = d3.select(this).select(".reaction-image");
+                    const currentDisplay = image.style("display");
+                    image.style("display", currentDisplay === "none" ? "block" : "none");
+                });
+
+                // Add feedback button for reaction nodes
+                reactionNode.append("foreignObject")
+                    .attr("class", "feedback-button")
+                    .attr("x", -40)
+                    .attr("y", 20)
+                    .attr("width", 80)
+                    .attr("height", 30)
+                    .append("xhtml:button")
+                    .style("width", "80px")
+                    .style("height", "25px")
+                    .text("Feedback")
+                    .on("click", (event, d) => {
+                        event.stopPropagation();  // Prevent triggering the reaction node click
+                        selectedNode = d;
+                        document.getElementById("feedback-container").style.display = "block";
+                    });
+            });
+
+            // Feedback form logic (unchanged)
+            const feedbackSelect = document.getElementById("feedback-select");
+            const feedbackOther = document.getElementById("feedback-other");
+            const submitFeedback = document.getElementById("submit-feedback");
+
+            feedbackSelect.addEventListener("change", () => {
+                feedbackOther.style.display = feedbackSelect.value === "Other" ? "block" : "none";
+            });
+
+            submitFeedback.addEventListener("click", () => {
+                const feedbackValue = feedbackSelect.value === "Other" ? feedbackOther.value : feedbackSelect.value;
+
+                if (selectedNode) {
+                    selectedNode.data.feedback = feedbackValue || "None";
+                    console.log("Feedback submitted for node:", selectedNode.data);
+
+                    // Send feedback to the server (implement API if needed)
+                    fetch("/submit_feedback", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ node: selectedNode.data }),
+                    })
+                    .then(response => response.json())
+                    .then(result => {
+                        console.log(result.message);
+                        document.getElementById("feedback-container").style.display = "none";
+                    });
+                }
+            });
+        });
+
+        // Load JSON data containing multiple trees from Flask API
+d3.json("/get_multiple_trees").then(data => {
+    const container = d3.select("#trees-container");
+
+    // Iterate over each reaction tree
+    data.forEach((treeData, index) => {
+        // Create a new container for each tree
+        const treeContainer = container.append("div")
+            .attr("class", "tree-container")
+            .attr("id", `tree-${index}`);
+
+        // Set dimensions for the tree
+        const width = 1200;
+        const height = 400;  // Reduced height for more compact trees
+        const margin = { top: 20, right: 20, bottom: 30, left: 20 };
+
+        const svg = treeContainer.append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const g = svg.append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Tree layout
+        const treeLayout = d3.tree().size([height - margin.top - margin.bottom, width - margin.left - margin.right]);
+
+        const root = d3.hierarchy(treeData);
+
+        // Compute the tree layout
+        treeLayout(root);
+
+        // Links
+        g.selectAll(".link")
+            .data(root.links())
+            .enter()
+            .append("path")
+            .attr("class", "link")
+            .attr("d", d3.linkHorizontal()
+                .x(d => d.y)
+                .y(d => d.x)
+            );
+
+        // Nodes
+        const node = g.selectAll(".node")
+            .data(root.descendants())
+            .enter()
+            .append("g")
+            .attr("class", d => `node ${d.data.type}`)
+            .attr("transform", d => `translate(${d.y},${d.x})`);
+
+        // Display molecule image for molecule nodes
+        node.filter(d => d.data.type === "mol")
+            .append("image")
+            .attr("xlink:href", d => d.data.image_path)
+            .attr("x", -30)
+            .attr("y", -30)
+            .attr("width", 60)
+            .attr("height", 60);
+
+        // Add reaction nodes as dark teal circles
+        const reactionNode = node.filter(d => d.data.type === "reaction");
+
+        reactionNode.append("circle")
+            .attr("r", 15)
+            .attr("fill", "teal");
+
+        // Add reaction image (initially hidden)
+        reactionNode.append("image")
+            .attr("class", "reaction-image")
+            .attr("xlink:href", d => d.data.image_path)
+            .attr("x", -30)
+            .attr("y", -30)
+            .attr("width", 60)
+            .attr("height", 60)
+            .style("display", "none")
+            .style("pointer-events", "none");  // Ensure image doesn't interfere with clicks
+
+        // Add click event to toggle reaction image
+        reactionNode.on("click", function(event, d) {
+            const image = d3.select(this).select(".reaction-image");
+            const currentDisplay = image.style("display");
+            image.style("display", currentDisplay === "none" ? "block" : "none");
+        });
+
+        // Add feedback button for reaction nodes
+        reactionNode.append("foreignObject")
+            .attr("class", "feedback-button")
+            .attr("x", -40)
+            .attr("y", 20)
+            .attr("width", 80)
+            .attr("height", 30)
+            .append("xhtml:button")
+            .style("width", "80px")
+            .style("height", "25px")
+            .text("Feedback")
+            .on("click", function(event, d) {
+                event.stopPropagation();  // Prevent triggering the reaction node click
+                selectedNode = d;
+                // Remove highlight from all buttons
+                d3.selectAll(".feedback-button button").classed("active", false);
+                // Highlight this button
+                d3.select(this).classed("active", true);
+                document.getElementById("feedback-container").style.display = "block";
+            });
+    });
+
+    // Feedback form logic (unchanged)
+    const feedbackSelect = document.getElementById("feedback-select");
+    const feedbackOther = document.getElementById("feedback-other");
+    const submitFeedback = document.getElementById("submit-feedback");
+
+    feedbackSelect.addEventListener("change", () => {
+        feedbackOther.style.display = feedbackSelect.value === "Other" ? "block" : "none";
+    });
+
+    submitFeedback.addEventListener("click", () => {
+        const feedbackValue = feedbackSelect.value === "Other" ? feedbackOther.value : feedbackSelect.value;
+
+        if (selectedNode) {
+            selectedNode.data.feedback = feedbackValue || "None";
+            console.log("Feedback submitted for node:", selectedNode.data);
+
+            // Send feedback to the server (implement API if needed)
+            fetch("/submit_feedback", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ node: selectedNode.data }),
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log(result.message);
+                document.getElementById("feedback-container").style.display = "none";
+                // Remove highlight from all buttons after submission
+                d3.selectAll(".feedback-button button").classed("active", false);
+            });
+        }
+    });
+});
+
+// Load JSON data containing multiple trees from Flask API
+d3.json("/get_multiple_trees").then(data => {
+    const container = d3.select("#trees-container");
+
+    // Display only the first three trees
+    data.slice(0, 3).forEach((treeData, index) => {
+        // Create a new container for each tree
+        const treeContainer = container.append("div")
+            .attr("class", "tree-container")
+            .attr("id", `tree-${index}`);
+
+        // Set dimensions for the tree
+        const width = 1500;  // Increased width to accommodate larger images
+        const height = 600;  // Increased height
+        const margin = { top: 20, right: 20, bottom: 30, left: 20 };
+
+        const svg = treeContainer.append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        const g = svg.append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
+
+        // Tree layout
+        const treeLayout = d3.tree().size([height - margin.top - margin.bottom, width - margin.left - margin.right]);
+
+        const root = d3.hierarchy(treeData);
+
+        // Compute the tree layout
+        treeLayout(root);
+
+        // Links
+        g.selectAll(".link")
+            .data(root.links())
+            .enter()
+            .append("path")
+            .attr("class", "link")
+            .attr("d", d3.linkHorizontal()
+                .x(d => d.y)
+                .y(d => d.x)
+            );
+
+        // Nodes
+        const node = g.selectAll(".node")
+            .data(root.descendants())
+            .enter()
+            .append("g")
+            .attr("class", d => `node ${d.data.type}`)
+            .attr("transform", d => `translate(${d.y},${d.x})`);
+
+        // Display molecule image for molecule nodes
+        node.filter(d => d.data.type === "mol")
+            .append("image")
+            .attr("xlink:href", d => d.data.image_path)
+            .attr("x", -50)  // Increased size
+            .attr("y", -50)  // Increased size
+            .attr("width", 100)  // Increased size
+            .attr("height", 100);  // Increased size
+
+        // Add reaction nodes as dark teal circles
+        const reactionNode = node.filter(d => d.data.type === "reaction");
+
+        reactionNode.append("circle")
+            .attr("r", 20)  // Increased size
+            .attr("fill", "teal");
+
+        // Add reaction image (initially hidden)
+        reactionNode.append("image")
+            .attr("class", "reaction-image")
+            .attr("xlink:href", d => d.data.image_path)
+            .attr("x", -50)  // Increased size
+            .attr("y", -50)  // Increased size
+            .attr("width", 100)  // Increased size
+            .attr("height", 100)  // Increased size
+            .style("display", "none")
+            .style("pointer-events", "none");
+
+        // Add click event to toggle reaction image
+        reactionNode.on("click", function(event, d) {
+            const image = d3.select(this).select(".reaction-image");
+            const currentDisplay = image.style("display");
+            image.style("display", currentDisplay === "none" ? "block" : "none");
+        });
+
+        // Add feedback button for reaction nodes
+        reactionNode.append("foreignObject")
+            .attr("class", "feedback-button")
+            .attr("x", -50)
+            .attr("y", 30)
+            .attr("width", 100)
+            .attr("height", 40)
+            .append("xhtml:button")
+            .style("width", "100px")
+            .style("height", "30px")
+            .text("Feedback")
+            .on("click", function(event, d) {
+                event.stopPropagation();
+                selectedNode = d;
+                d3.selectAll(".feedback-button button").classed("active", false);
+                d3.select(this).classed("active", true);
+
+                // Position feedback container
+                const feedbackContainer = document.getElementById("feedback-container");
+                feedbackContainer.style.display = "block";
+                feedbackContainer.style.position = "fixed";
+                feedbackContainer.style.top = "20px";  // Stick to top of viewport
+                feedbackContainer.style.left = "50%";
+                feedbackContainer.style.transform = "translateX(-50%)";
+            });
+    });
+
+    // Feedback form logic
+    const feedbackSelect = document.getElementById("feedback-select");
+    const feedbackOther = document.getElementById("feedback-other");
+    const submitFeedback = document.getElementById("submit-feedback");
+
+    feedbackSelect.addEventListener("change", () => {
+        feedbackOther.style.display = feedbackSelect.value === "Other" ? "block" : "none";
+    });
+
+    submitFeedback.addEventListener("click", () => {
+        const feedbackValue = feedbackSelect.value === "Other" ? feedbackOther.value : feedbackSelect.value;
+
+        if (selectedNode) {
+            selectedNode.data.feedback = feedbackValue || "None";
+            console.log("Feedback submitted for node:", selectedNode.data);
+
+            // Send feedback to the server (implement API if needed)
+            fetch("/submit_feedback", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ node: selectedNode.data }),
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log(result.message);
+                document.getElementById("feedback-container").style.display = "none";
+                // Change color of the feedback button for this node
+                d3.select(selectedNode.element)
+                  .select(".feedback-button button")
+                  .classed("feedback-sent", true);
+            });
+        }
+    });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,2601 @@
+{
+    "4c626a07b5621605aa98692bee9e1be06581d489a5ea7ddbc3a14fc2e7c6819b": [
+        {
+            "user_id": "0c33917e-de7c-4dc0-8444-da9a7070dd64",
+            "feedback": "Reaction unfeasible",
+            "feedback_text": "None"
+        }
+    ],
+    "6c6f02e0683efc6589ea282c1506e635a62bb541aa55d8f4085e69df52d4f054": [
+        {
+            "user_id": "0c33917e-de7c-4dc0-8444-da9a7070dd64",
+            "feedback": "Reaction feasible",
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback": [
+        {
+            "user_id": "0c33917e-de7c-4dc0-8444-da9a7070dd64",
+            "feedback": "Other",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "fb68d672-a1ac-489d-b2c3-4a64a32ec1d6",
+            "feedback": "Route feasible with severe modifications",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "84706ee3-8cc2-4e50-b43e-68df41cdc1f6",
+            "feedback": "Route unfeasible",
+            "feedback_text": "None"
+        }
+    ],
+    "28b5a6d6d0aa061d856ccc4be1033d205d538ba52bc8356da00f8adefb405e4e": [
+        {
+            "user_id": "0c33917e-de7c-4dc0-8444-da9a7070dd64",
+            "feedback": "Reaction feasible",
+            "feedback_text": "None"
+        }
+    ],
+    "d5b9fe99bde730be5884ab9ea884b8dec7e49eec1e0ba1cee00599269769d625": [
+        {
+            "user_id": "0c33917e-de7c-4dc0-8444-da9a7070dd64",
+            "feedback": "Reaction unfeasible",
+            "feedback_text": "None"
+        }
+    ],
+    "751cf95dd93a8a0da8f7fdbd34f8bdaaaa7d2b310c435ce6bcf3676461e8dbf3": [
+        {
+            "user_id": "0c33917e-de7c-4dc0-8444-da9a7070dd64",
+            "feedback": "Other",
+            "feedback_text": "ergaerhtw4e"
+        }
+    ],
+    "cf2b8b092e314b597904bd1029eab93c4edef5fcaf8c0d33bfb16587e2fb2a95": [
+        {
+            "user_id": "fb68d672-a1ac-489d-b2c3-4a64a32ec1d6",
+            "feedback": "Reaction feasible, all good",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "84706ee3-8cc2-4e50-b43e-68df41cdc1f6",
+            "feedback": "Unnecessary step",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "cb259c50-1bc2-41bc-824f-4b20c4dcb575",
+            "feedback": "Selectivity(regio-, stereo-, chemo-) issues",
+            "feedback_text": "None"
+        }
+    ],
+    "6c580535e6425798c1824e73a5bab6912e1f65ed23bab9d9264cbe11e0a82933": [
+        {
+            "user_id": "84706ee3-8cc2-4e50-b43e-68df41cdc1f6",
+            "feedback": "Bad PG strategy",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "cb259c50-1bc2-41bc-824f-4b20c4dcb575",
+            "feedback": "Selectivity(regio-, stereo-, chemo-) issues",
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_3fd46bd1d5c0bbe2d4b174c65abb64a253f6393f07e0d879653b3371004ade24": [
+        {
+            "user_id": "1bddc841-135d-4983-8ec9-6999bad1fc12",
+            "feedback": "Route was not solved to building blocks",
+            "feedback_text": "None"
+        }
+    ],
+    "94a39ec47f4d613b5ed1e4d36780ddf94a5097b573ad60a067017de2eeefa5ec": [
+        {
+            "user_id": "1bddc841-135d-4983-8ec9-6999bad1fc12",
+            "feedback": "Unlikely disconnection",
+            "feedback_text": "None"
+        }
+    ],
+    "b8362f1a6a576f4192429633c5663efef0f11fd518c8d1c4933ce18bec1f543b": [
+        {
+            "user_id": "1bddc841-135d-4983-8ec9-6999bad1fc12",
+            "feedback": "Problems with reaction type and functional group compatibility",
+            "feedback_text": "None"
+        }
+    ],
+    "c0c194c227887d53d6647992076e95c9e7cd946f9a6c9791cc08abec1950433e": [
+        {
+            "user_id": "1bddc841-135d-4983-8ec9-6999bad1fc12",
+            "feedback": "Unnecessary step",
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_ca7bc3529cfaf9ce62d82e0345f4151aa3b1eb4859f06fed26835012e931e7d2": [
+        {
+            "user_id": "cb259c50-1bc2-41bc-824f-4b20c4dcb575",
+            "feedback": "Route unfeasible",
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_100b848b82ac183c7972342205aa21060b82747605c49f8d29a8aff8544790c8": [
+        {
+            "user_id": "cb259c50-1bc2-41bc-824f-4b20c4dcb575",
+            "feedback": "Route unfeasible",
+            "feedback_text": "None"
+        }
+    ],
+    "37b63c036560834175b2e86f0c0cd0a0c937a6a6392b6a16f4181c64ea72ed6d": [
+        {
+            "user_id": "cb259c50-1bc2-41bc-824f-4b20c4dcb575",
+            "feedback": "Unlikely disconnection",
+            "feedback_text": "None"
+        }
+    ],
+    "ab71140f1219cf109bdc0d5b47b45c386b2f34eab7b7916b403a7cbf2a171bc7": [
+        {
+            "user_id": "bce73fcd-c7df-40d3-a439-72755dbdf6b2",
+            "feedback": "Protecting group strategy is wrong / non-optimal",
+            "feedback_text": "None"
+        }
+    ],
+    "a1f39145246d1eb5d4e667150c79a54f7961bb52ae06bf08c5ce7ad94b8daf80": [
+        {
+            "user_id": "bce73fcd-c7df-40d3-a439-72755dbdf6b2",
+            "feedback": "Protecting group strategy is wrong / non-optimal",
+            "feedback_text": "None"
+        }
+    ],
+    "f685be38a0b78ea5a3e6bd9e3ac8e1ded937ac3351c3fcc8ff81ebb2f3c379fc": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Selectivity(regio-, stereo-, chemo-) issues",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "I'm not 100% sure if the reaction will select NH2 over the SH as coupling partner."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "8ef582debd20f17d0eaf2143df6b629781223cc88f886219d13bfb9a30b4ec3a": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Unnecessary step",
+            "feedback_text": "Hej"
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Well precedented."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, unexpected disconnection",
+                "Selectivity(regio-, stereo-, chemo-) issues",
+                "Problems with reaction type and functional group compatibility",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "The carboxylic acid might need to be protected as an ester to avoid unwanted alkylation. "
+        }
+    ],
+    "7077ac57fc351effbf221c452f39a933f7845e3fffceee9beb0bdd02c5e8f6ea": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Reaction feasible, all good",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "There is a risk the neighboring NH could interfere with the ortho ester."
+        }
+    ],
+    "1aefe644f0fd6763bfd1c3ed488c52da648ee3b1652c71aac44051b711268e94": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Unlikely disconnection",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": "Protecting group strategy is wrong / non-optimal",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "a6c509ed4533ddc9c9533e88ba9fd8b081edc56863eb7072e499e4081efca39b": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Reaction feasible, all good",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_a829ce8f00f259bb9bd3b98f829c9dc7264b06cdfde2c41fb7ef8c9961215dd4": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": "Route feasible",
+            "feedback_text": "Terrible route! (I do not mean to be mean, I am just having a bit of fun)"
+        }
+    ],
+    "5af9753e6b181d95aad7fab5cfd9944d58d7ba92fbd5d46d762b0f15100e9c21": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Reaction feasible, all good",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "Deprotonation will first take the NH. Double deprotonation with a very strong base is possible, but even then, the N is expected to be a kinetically superior nucleophile. Feasible if the NH is protected first. E2-elimination of EtBr might compete under strongly basic conditions"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "Even if the aniline nitrogen was protected, the alpha carbon of the linear amide would be reactive as well under the strongly basic conditions required. This step is not feasible as such."
+        }
+    ],
+    "383b703307ae4b7c2a320af995cc44448aa038049e1d84cd2018b72ab81947df": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Protecting group strategy is wrong / non-optimal",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": "Unnecessary step",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Reaction feasible, unexpected disconnection",
+                "Unlikely disconnection",
+                "Selectivity(regio-, stereo-, chemo-) issues",
+                "Problems with reaction type and functional group compatibility",
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "9df9b851e26c143661b430d089a4e10bded22161ad5eb713b9908f89915269ad": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Protecting group strategy is wrong / non-optimal",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "This is not a possible way to make an aryl methyl ether."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection",
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_21aa04dd904a3d339c55812d2192c3c93f965d5a06d6bb081722f27438e9fe63": [
+        {
+            "user_id": "6d716f58-260f-458c-b213-d3f6ec1e24c6",
+            "feedback": "Route unfeasible",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route unfeasible",
+            "feedback_text": "The selective bromination is critical for the strategy, but very unlikely to succeed.\nI cannot see the right part of the product, so I cannot judge the last step."
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": "Route unfeasible",
+            "feedback_text": "None"
+        }
+    ],
+    "908078287c290d7b817f995a8d900918975502a10f18e57e28da516c27859635": [
+        {
+            "user_id": "4311785b-d708-44f5-b676-bf97a35db786",
+            "feedback": "Protecting group strategy is wrong / non-optimal",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [],
+            "feedback_text": "The starting material does not fit the screen, so I cannot really give any feedback"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "93c6ef4f668fb90dd8c35565c7099715b97e29070e1c9a165c8b4d72b2265289": [
+        {
+            "user_id": "27318081-bf72-4041-8c2a-3d04a59252b7",
+            "feedback": "Unlikely disconnection",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_f6b64dcfa154c6440fd89e279d53601ae051933b0b71b8bc04f946b1e52eae5f": [
+        {
+            "user_id": "27318081-bf72-4041-8c2a-3d04a59252b7",
+            "feedback": "Route was not solved to building blocks",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": "Route was not solved to building blocks",
+            "feedback_text": "It is better to propose the ester exchange at the beginning of the rote.\n\n"
+        }
+    ],
+    "b4223b4de7dc5d198eca6271b08aa3ecb0023db1e47a53b859d78f0daa3f25bd": [
+        {
+            "user_id": "d69a6451-57a6-4fca-b533-d081e58f47a8",
+            "feedback": "Unlikely disconnection",
+            "feedback_text": "None"
+        }
+    ],
+    "b3705f08f06caec482064366ced685d83a52aa967d58340acb01e533a2aed8db": [
+        {
+            "user_id": "d69a6451-57a6-4fca-b533-d081e58f47a8",
+            "feedback": "Unnecessary step",
+            "feedback_text": "None"
+        }
+    ],
+    "9c3c097ac729ecf8328dd7afa9f05b76d8380a2aa79365803165a758b04d55f5": [
+        {
+            "user_id": "d69a6451-57a6-4fca-b533-d081e58f47a8",
+            "feedback": "Problems with reaction type and functional group compatibility",
+            "feedback_text": "None"
+        }
+    ],
+    "17a42fbb0dde9d6bab8e139ebd01484e986a7721abaefb0d40890f87f553cf60": [
+        {
+            "user_id": "d69a6451-57a6-4fca-b533-d081e58f47a8",
+            "feedback": "Problems with reaction type and functional group compatibility",
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_675a1c950cc773820303d1d5a0c4659f69b66675cf14a4c1fe4bd5e0fa091e78": [
+        {
+            "user_id": "d69a6451-57a6-4fca-b533-d081e58f47a8",
+            "feedback": "Route unfeasible",
+            "feedback_text": "None"
+        }
+    ],
+    "60d7fb4fa43ecdac2b7a18aa343da6d1cd464ddd9ae5ab8d67a14540358614a8": [
+        {
+            "user_id": "65878dec-0e4f-4bca-bd61-777b6729241b",
+            "feedback": "Selectivity(regio-, stereo-, chemo-) issues",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "Isopropylamine is a commercially available chemical"
+        }
+    ],
+    "231ca32329b172f130f3d1ad9e44a80328a4b4b1235464f0abc5888534a54ea2": [
+        {
+            "user_id": "65878dec-0e4f-4bca-bd61-777b6729241b",
+            "feedback": "Reaction feasible, unexpected disconnection",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": " "
+        }
+    ],
+    "43b564085c38a74b85a214fdb4f6dbdd320acb5cfd2154971785f0a65b6268a3": [
+        {
+            "user_id": "65878dec-0e4f-4bca-bd61-777b6729241b",
+            "feedback": "Problems with reaction type and functional group compatibility",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "This C-H activation/coupling might need the intermediacy of a Pd (IV) species, and methos to generate it are not general"
+        }
+    ],
+    "general_feedback_8ec931beaa9d39e306e40fb6fb265243d8f3ccb8b99f4cc34b26d19145f31906": [
+        {
+            "user_id": "65878dec-0e4f-4bca-bd61-777b6729241b",
+            "feedback": "Route was not solved to building blocks",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route unfeasible",
+            "feedback_text": "This route is really bad"
+        }
+    ],
+    "c5b4c7ead91867b307b10848eb62979938baa8081df3d9634ec30196322801b0": [
+        {
+            "user_id": "65878dec-0e4f-4bca-bd61-777b6729241b",
+            "feedback": "Problems with reaction type and functional group compatibility",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "4dd1520b6748f50a802028316c9a0ab1dd89933bb6a8d45426de2c7d543f5a29": [
+        {
+            "user_id": "65878dec-0e4f-4bca-bd61-777b6729241b",
+            "feedback": "Problems with reaction type and functional group compatibility",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_3d63265d1585efe309c0d10355a004eb813be8b7d5572754e1995a40b3a732df": [
+        {
+            "user_id": "65878dec-0e4f-4bca-bd61-777b6729241b",
+            "feedback": "Route unfeasible",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible",
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_d2f64ad3d7e010d1f8ca26d21678235f5ad46cd09242616a76851b795d4d6030": [
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": "Route unfeasible",
+            "feedback_text": "None"
+        }
+    ],
+    "fd8dc23874714d6f34b068a9011e88c77c3dbc9e92691fa6cc569648b9b35fd0": [
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": "Reaction feasible, unexpected disconnection",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_c21b018f204269feea28de76ecb7d09d3a16d90b201513c1b4f5fef45fa4f057": [
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible",
+            "feedback_text": "None"
+        }
+    ],
+    "4509ebbaf0b8d1d617ca1baf6208285ba23da9e41a90e6d09417de52dbf2d273": [
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": "Problems with reaction type and functional group compatibility",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_2afd9c003abb996029ffb30cdabfd49ae2949039114eeb7742e224d5955b970d": [
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": "Route feasible",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible",
+            "feedback_text": "None"
+        }
+    ],
+    "b46e0173d07df3558cf57f7d77be2f08737f229588dcf2649f9d37915195b0c4": [
+        {
+            "user_id": "a6a34af8-0f72-496f-80b9-202d2ddab377",
+            "feedback": [
+                "Unlikely disconnection",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "d9ef5538a9d2c3843a6cb786a040b9eff9423e5b5b710b8444b7beb7142cef4e": [
+        {
+            "user_id": "bc6ca9be-13e5-438b-bfd5-81b048b9cc36",
+            "feedback": [
+                "Unlikely disconnection",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Simple hydrolysis of hte most reactive group."
+        }
+    ],
+    "bf1da182eab308f02aa4a3ccbe2e43d529a52dbc6ca42a078384c6c9cf398997": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Reduction of one amide in the presence of another. Can probably be solved with reagent selection and process optimization."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection",
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "There are two amides in the substrate and it would be difficult to control the selectivity of the reduction"
+        }
+    ],
+    "general_feedback_dcc584b3100aa56eb394ae4a921b197d5b59eb3151d52d0bbbe58c7940ce4c75": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "Protecting groups in first step, significant optimization of second step. Not an optimal route."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route unfeasible",
+            "feedback_text": "None"
+        }
+    ],
+    "eb11fb15f93a474966753a96f77056934bff26cc6bebb996fba0cc2cd964397e": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "5b8cc8677a758c9cc993e199a802086a2ec16b283a6b306830dde7e3d8f56a6f": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "One significant regioisomer expected, ortho to the ether (more activated ring)"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "regioselectivity could be a problem, but the reaction might afford a bit of the desired material"
+        }
+    ],
+    "9ddede1b7f1adbe7de18d73d189797765b828efaad023d502bc4f63d5bdf7ff5": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Deprotection, simple, but unusual to have to start with a deprotection step. "
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Deprotection, simple, but unusual to have to start with a deprotection step. "
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Deprotection, simple, but unusual to have to start with a deprotection step. Normally, it would be economical to start two steps back, at least for large scale synthesis. "
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "bd5d326d09e37c4e23bba54c8c245fe5ca20a09443bfd67a964f52899a500d4b": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Simple hydrolysis, good."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "Feasible, bur unnecessary at this stage. It is better to propose this step at the end of the route"
+        }
+    ],
+    "8b98ceaa34b21f70c71c1553aa0dcb61cb074984a0c889cb690b81f874f241ab": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, unexpected disconnection"
+            ],
+            "feedback_text": "Double deprotonation, increases risk for E2 side product. This would have worked better with the precursor."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "The carboxylic acid might need protection to avoid its unwanted alkylation into an ester"
+        }
+    ],
+    "general_feedback_2d4e226114f49ace5283e0279e8ada5fc93abfd9465c6883815466749916cd6c": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "I would couple the hydroxyindole before deprotection, better coupling reaction."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "None"
+        }
+    ],
+    "98532d3c173f0087efe94199d5ad9ff1058ce2c001c580d42a516a372055ce68": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "I don't know for sure, with a primary amide, there is a risk of proceeding to the nitrile instead of the thioamide."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "76726b47749c2fc03796974930d154f043d5134c4d739e58a01a6e4f7dc569ef": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Potential regioselectivity issue, but for this reaction, there is much precedent for finding selective reaction conditions."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "1885ce9407b24a786c6dcfaeece72cc5c61eb0b63492e6004bdd213c66b7c88d": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Probably needs cryogenic conditions, but it should be possible to make it work as intended. Might work better with Weinreb amide rather than simple DMF."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "095a967fb4ccd60d78add131ad909e56003dcc89926e4e151463c82d3f732f4d": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, unexpected disconnection"
+            ],
+            "feedback_text": "Easy reaction to do, but the phosphoric acid reagent cannot do this oxidation. There are many other oxidants that work though."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "the oxidation of the aryl aldehyde to aryl carboxylic acid is feasible, but not by reacting with phosphoric acid as suggested"
+        }
+    ],
+    "f840bf3054b85269d235dced0f10c67137c41753d0c65a50ca595f6dba8daf60": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Double reaction, peptide coupling followed by deprotection (ester hydrolysis)"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "It is feasible, but the tool forgot to hydrolyse the methyl ester to get to the target molecule"
+        }
+    ],
+    "general_feedback_65a7212a299a447c1890736238efa8e3d6d2ded0f48d57ea89a87116488b565f": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "Check conditions for first step, and change oxidant in 4th step."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route unfeasible",
+            "feedback_text": "The aryl bromide to formyl arene functional group transformation is not feasible. Moreover, the route did not simplify into building blocks"
+        }
+    ],
+    "a64def6eb63e2d7dc8f1910edf2f15d565b80f0f6160edcf61f1580741f77996": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Should work, but the pyrimidine might also be hydrolyzed (Cl to OH), not sure if this is good yield"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "85f67cf2034f4f38b5bedae33537272cc44df31653eab7b90c355b299066b9c4": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "You can probably get the desired regioselectivity with a mild base, not sure."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_6d327fec53b10c4bc3a9935fc3aecb297d8dcae060692b568397990c4a04caa8": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "Several potential regioselectivity that could potentially be alleviated by first reacting with the bromoacid to protect the most reactive sulfur."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route was not solved to building blocks",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "None"
+        }
+    ],
+    "b38d1bba5e4d25f20b668140705af6cddf780148a3c3a02610e6c73c8a488eed": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "I'm very surprised that the starting material is available. It has almost all the complexity of the final product. The diol can be converted easily into the epoxide in just two steps, not six."
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "2900df17d96d10f895701039ee86ebc4cad507d418543b19ea085c04b735d183": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Unlikely disconnection",
+                "Unnecessary step"
+            ],
+            "feedback_text": "Extremely hindered OH, I don't believe the benzylation will work, and also it's not needed."
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "b44942a409b7c6aeb13407c5a29c6480c33529e630182b20113209f2b7cb5693": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "032f8625b193e7af86ad47705aa9f3c276e64024d6d28c79ae188564b72926bb": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Could have been the first step (possibly with a different reactant, such as MeSO2Cl)"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "73d4affb115ca5b94a7fe94bbbda11ca963679634eb5ed6f58c69fa842a4cfe3": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "0de961089b6705f8a340024b8492e02f890cb74d1a6bb64be27ef6493bd63c5b": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Extremely dependent on stereochemistry. With the wrong stereochemistry, serial Payne-rearrangements are likely."
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_b317af3618a76bd55a1b16e3c88b0133bfd8dd3575882d943fb7d13b2f33bbe6": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "Only step 4 and 6 needed. Very dependent on the stereochemistry (not shown). If any of the neighboring epoxides are trans to the tertiary alcohol, the last step can give Payne rearrangements, and different reaction products."
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "The route proposes an unnecessary protecting group dance that elongates the synthetic sequence severely. Only two steps should be necessary: 1) tosylation, 2) base "
+        }
+    ],
+    "fc370b826d26b908186952907068b2c5c657680b7c5b0d1a377b76e79f651d86": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "1c865523768753cda04a94ce52d09d7e22b2a33428b3849350043afe4cc19071": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "May need two different reducing agents, not sure if one can do it. Nitro reductions have a significant risk for side products."
+        }
+    ],
+    "94510562a89c91b5289a5ab82aa2cb5741ac0fd44efe63abcd06be3ceadae7b2": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "The initial Michael substitution may give the wrong isomer, requiring isomerization before ring closure. The closure needs additional reagents to effect the final Friedel-Crafts."
+        }
+    ],
+    "general_feedback_bf0737ca82aeb53c93ff9de0cf0c930fd15d32af54f7a41ed215eeec70696e2e": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible",
+            "feedback_text": "Workable, may require significant development time to get all steps right."
+        }
+    ],
+    "a7bea74085263a6685a8157abb77a733bb57ee950291f76d2d42f292d71cd12d": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "25415ed096d7cad1e259cb81918f476d25063125394325c69e2eaa82f2900939": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Significant risk for decarboxylation. Switching steps 2 and 3 alleviates this."
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Significant risk for decarboxylation. Switching steps 2 to a later time alleviates this."
+        }
+    ],
+    "082a0cc395e9f3d7408596a0bb2c9368a434c9a3b957a9cd418d280f205edd06": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "cd10378ae4fc17d2f4481b88a0d2bb4a6c218d3512418f3f8ffb10d14cf5e82f": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "Hindered boronic acid, and the free carboxylic acid may interfere with the Pd catalyst. Better if step 2 is last."
+        }
+    ],
+    "general_feedback_113ee72b840d8a2fd09d87cfed886e07dcd4f576d44a2d8457fe56684653f315": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "Step 2 should be last, to avoid problems with the carboxylic acid. Also, it's best not to have a Pd coupling as the last step, it's better to have an additional purification to purge Pd from the final product."
+        }
+    ],
+    "640c5d262fa9f2126b8718f81693e177edd03ec5df48d9ac2cc863111902b811": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Good. Several other reagents possible, so a wide range of options, good for scale-up optimization."
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Good. Several other reagents possible, so a wide range of options, good for scale-up optimization.\nThere is a risk the acid chloride is not stable in the presence of the hetereocycle. A one-step peptide coupling might be prefered. "
+        }
+    ],
+    "92ed09f3254cae63270b66407728138bedd7b4a162d57dc16329c71a9a2f10ab": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "The two last steps could be a one-pot peptide coupling."
+        }
+    ],
+    "general_feedback_49a3f8101e3ef37e11e7f3f1e2ccf9f91a14e970df09b939e5a11efe886f651a": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "Possibly shorten by one step using a peptide coupling agent."
+        }
+    ],
+    "2d56735ec710da31798a856fa4a7334d23b47c31cb89fc17f117a8839126cf29": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Low selectivity in the bromination step."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "The proposed product won't be the major one, so this step is unfeasible as such."
+        }
+    ],
+    "73423bce4c8be854131d5892d431469c3465c87aee99103013b4e1568041f643": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Very hard to do this deprotection in the presence of a dibenzylic chloride."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "0c0133d4363ed3173585481fe732bb7e22309cc99da30ceadc713bbdcb9f2ee4": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Might work, you never really know with transannular reactions until you try ..."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "17efc8d09fabe07866cdb173802223dcd2a1c58abee7c936c38c02388b0278eb": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Unlikely disconnection",
+                "Unnecessary step"
+            ],
+            "feedback_text": "Not a strong enough chlorinating agent, but it's easy to buy MeSO2Cl, so not a problem."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "89daec0e2a7d63f1138a5d851767fe9e514b6d61e29049ca15928a8c96a6891b": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "Should work, but the protection is not really needed for the next step."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Reaction feasible, unexpected disconnection",
+                "Unnecessary step"
+            ],
+            "feedback_text": "feasible but unnesesary"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Reaction feasible, unexpected disconnection",
+                "Unnecessary step"
+            ],
+            "feedback_text": "feasible but unnecessary"
+        }
+    ],
+    "2dcdfaba0b39f9811e955fc9641ba0a3dda980699559ea7f1c9bb06355596713": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Yes, also works without the protecting group."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "0b1e9fdb39dc7a859c71b019a278f0295e783e249b7c6f657d0448d61182fb62": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "Feasible, but not needed."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_c1267eef98175c99289bd990782fc1f8c91a98cfb6ee69a08df4c8434bfd988d": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "Strangestarting material, with a very sensitive dibenzylic chloride, and the bromination is expected to have low selectivity. But the bromination is not needed! It's possible that the reaction will work directly from the starting material if it can be selectively deprotected."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route unfeasible",
+            "feedback_text": "The route has many problems:\n\n_ it proposed a series of redundant transformations at the end.\n\n- It proposed an unlikely bromination step in terms of regioselectivity.\n\n- It does not resolve to building blocks. "
+        }
+    ],
+    "6a1f886e88efe2afad7344a11672058aa5266680782666f7554895c2f8b62140": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, unexpected disconnection"
+            ],
+            "feedback_text": "Simple reaction, but the solvent dichloromethane is not a chlorinating agent. Many others are possible."
+        }
+    ],
+    "44c059ad64b23e8f60ea445a89a998d454cfcb4cbe33342de9c0709a2e7763da": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues",
+                "Unnecessary step"
+            ],
+            "feedback_text": "High risk of chloride hydrolysis. Do the transesterification first, or not at all (hydrolyzed in the end anyway)."
+        }
+    ],
+    "69fb4cb668241de49b02e83496c56ab91f64da2bc10942eafd0f553ca07cfc42": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Unnecessary step"
+            ],
+            "feedback_text": "Either do ester replacement first, or carry the methyl ester through without replacing."
+        }
+    ],
+    "934c0225152ba251347f51be26d48db5563d65f2248f75228019b967fe38d2d8": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Tricky to do in the presence of the chloride."
+        }
+    ],
+    "62e03488a97c257b6052c13bf18efa7e2e28e539dbea936c6f6c8cd21d098674": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [],
+            "feedback_text": "Bad selectivity in the presence of chloride, but not needed!"
+        }
+    ],
+    "764fbad847b09d52ed8b07bad5a95f653589e6caaeec453aa83ddc104f27d9f9": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Unlikely disconnection",
+                "Unnecessary step"
+            ],
+            "feedback_text": "Carbonic acid will not create the methyl ester. Many other reagents will, but it's not necessary, easier to keep the methyl ester from the start!\nThe product looks sensitive, the nucleophile and an electrophile in the same molecule. Needs to be stored as hydrochloride salt."
+        }
+    ],
+    "general_feedback_e20522ac9e5ceadf8f68291ed7919696c85177f0477a2f1947223550e6378938": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "Many unnecessary deprotection and protections steps. You only need 2 steps:\n1: N-deprotection, current step 4\n2: chlorination under acidic conditions, isolating the HCl salt. (current step 1)"
+        }
+    ],
+    "4c798cbee6350b4af9395a8d052620b1131969aaea30751c08a5d78968b82dcb": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "There is a regioselectivity problem, I think there is OK selectivity, but I don't remember for sure which is preferred. I'm afraid it is the other one ..."
+        }
+    ],
+    "ffdb31ec7818da87bc742afbb07e8f358c8227d8753902b92184ccf40226e597": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "If the regiochemistry is wrong in the first step, just reverse step 1 and 2, it should be possible to solve."
+        }
+    ],
+    "8a99bb744ad1213edf6bea514bc92c4feaa50de11cbc11fa11d5d6cef089eea2": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_86975f2b06f0097ceba441ebc26ac9e6b4c9de878b843f8216f617d0421eb7e9": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "Not sure modifications are needed, but if so, they are simple.\nNot the most atom economic route, I think there are better reactants for the amine SNAr."
+        }
+    ],
+    "986cbd8671dc41b38afdfa82b048508d97fd5155fdb681b5f0eb47e48031e85c": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "f1705728cfccb1bec90da325c46ea210ec145663b4aead3294ac5aaddef963fb": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "d3518be5af305ad359470f11566823a455c88e39592519ce9a7e37702493c398": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Maybe the amide is also chlorinated to the iminoyl chloride, but it shoudl not be insurmountable."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, unexpected disconnection",
+                "Unnecessary step"
+            ],
+            "feedback_text": "The amide could be formed directly from the acid without pre-activation as acyl-chloride"
+        }
+    ],
+    "96494abc6b8beed8342711ea93806a0debd04df86cad718e1e75adf70c8aa0c6": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "44f3eb9ad4c0aff382412c1131bf1a8e61f61df883c7fa296fac7c07729bb88d": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Risky to carry the primary chloride through all these steps."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "ba33613fcd51f0776c268b04f471ee0e32254059704fe4832575ef5717e65bbd": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_b6762ce16ce90fc7d864ac253a743e6580efcb196f461836bcd33154156480ea": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "There is a high risk that the alkyl chloride will react or eliminate. I would carry a protected serine through instead, and convert it to a leaving group just before the last step."
+        }
+    ],
+    "73b123c79d4e073f599bef6f3f25a204572ef0aec2a6787e57bb3156baf2e8bd": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "f1a7664c0d33214bb7561cb27fea7eb2a145d5ab3958d34b4906c338a54a0a70": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "The methyl ester must be removed before reaction with the allyl bromide, and there is a risk of reaction instead with the aniline."
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "There is a risk of reaction instead with the aniline. Can be solved with the right pH and solvent."
+        }
+    ],
+    "128015e7428783618b55e86b70dc9098ee8bc3c63d753ec728ea80c207a3a178": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "548b3e7b57ad47a6a70ad0e7011a2e207dc9f87b6530c38181e4a7716c168087": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "b797982d3a1ae69763abe1feece38665d4810aa57b8ba465b027eacbcbff9546": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_c281608dd4e8dcacda3eadcc6333c89560bdba0a4fbf436c0de72995d48f975d": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route feasible",
+            "feedback_text": "All steps are workable. Protecting group strategy might be modified. It's possible it could be done in fewer steps without some of the protecting groups."
+        }
+    ],
+    "5cbb3547d0fb1159754d900e0754ba4c314989c8323b407391521d61f83dcd9d": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Unnecessary step"
+            ],
+            "feedback_text": "Dimethyl amine is available."
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Unnecessary step"
+            ],
+            "feedback_text": "dimethylamine is a commercially available chemical"
+        }
+    ],
+    "fb4550d4deebd5e915c35d7bfacdbc7b78faf7967ad2573d71669dab2ac32fea": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "This bromination will not work, the groups around the thiazole are much too sensitive.,"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "3c217b1efcd131c22be5cc2f32f8d9123a8faf524094bc18cabf1a734ff87376": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "With Pd"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "af133b73429531ef163e26c846288b4a37171cf02acaf98271375715d1ec3de6": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "SNAr on an unactivated, electron rich benzene will not work."
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, unexpected disconnection",
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "356b098873bd6273f08913a9ceb7287b8d612269694b081ff24072045d83f2d0": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [],
+            "feedback_text": "I can't see the final modification, that part of the molecule is hidden."
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "3fbcf2972821fc846c8dd287af1b723a6ef760227b91cfd10878ad2feffa87fa": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Unlikely disconnection",
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "Formaldehyde hydrate never acts as a nucleophile, dichloromethane is not a methylating agent, and the product, a hemiacetal of formaldehyde, is not stable. Zero points on the ochem exam for this one."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection",
+                "Problems with reaction type and functional group compatibility",
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "e2e61a2532a8040f640a8b7d7a94a2797d9eb2b0f909f9c5566e1a3278326aa2": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "The hemiacetal cannot act as a nucleophile, and the unactivated aryl fluoride is not an electrophile."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection",
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "02b0376bfacec782c81968672be94ba879f6a6575517855df0a74c61f3f50802": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Protecting group strategy is wrong / non-optimal",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "01e859b2f30d4c5769296b84f66d56a0ff23fc6b47ef405649844c27e061a7e3": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "I don't know of a good way to remove the methoxy group reductively from a benzene ring. Not completely impossible with Ni catalysis, but the harsh reaction conditions are not compatible with the rest of the molecule."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "d9d26074adaa97cbc132a2683d4314346183364615d595feec2cd4bd03ad9a6e": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_e703d11765232c370b715fc932ad21db207df1666e2dd1e743acb6b2942ed9f8": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route unfeasible",
+            "feedback_text": "Many impossible steps. Everything is just to simply replace a fluoride with a nitro group. Not easy in any way, but this is not a productive proposal."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route unfeasible",
+            "feedback_text": "This synthetic route is terrible. It seems like the retrosynthesis got super confused and proposed a series of funny steps to convert a aryl fluoride into the corresponding aryl nitro compound. really bad"
+        }
+    ],
+    "24f8f58ac4fb062021972326b43c04e7a9ce706f2abab869fee847f71a20c735": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "The desired bromination is not going to be the major product, probably not present at all."
+        },
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues",
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "The desired bromination is not going to be the major product, probably not present at all.\nThere is also a high risk that the sulfur will be oxidized by NBS."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "The selectivity of this bromination need to be revised"
+        }
+    ],
+    "general_feedback_bce58c3e554f8207fd4e6198ca1eb4731f23cdabbc122be16b6e7e97bfd00e0d": [
+        {
+            "user_id": "bcf28a27-67e7-4386-a5bb-3bde92bc6e8f",
+            "feedback": "Route unfeasible",
+            "feedback_text": "Wrong product produced"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "The regioselectivity of the bromination might be questionable in my opinion. Does this tool predicts reactivity trends as well??? That would be nice!"
+        }
+    ],
+    "eda7f8c0f0096284eff6ff9ceaadbf6b1c1504bb9a8060d6290f4435299ff50f": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "7d31c21b999e01f42998a1c53f4e52b3b0db26052414635bee9b8df363a0c8d1": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "The reaction might be feasible. However, an alert should be raised as this reaction is transition metal mediated and the substrate has donor heteroatoms that might coordinate with the metal and truncate its activity. Specially in this case as the substrate has N,O- in a 1,5-relationship.\n\nThis problem could be solved experimentally, but it would be nice that this tool could also make the experimentalist aware of this."
+        },
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "The reaction might be feasible. However, an alert should be raised as this reaction is transition metal mediated and the substrate has donor heteroatoms that might coordinate with the metal and truncate its activity. Specially in this case as the substrate has N,O- in a 1,5-relationship.\n\nThis problem could be solved experimentally, but it would be nice that this tool could also make the experimentalist aware of this."
+        }
+    ],
+    "421b589ea194594931cbefa148b9b7aff5d569e0011c5c3591038429153bfc95": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "The expected regiochemistry is fine, but an alter on the possibility of other regioisomer could be handy. "
+        }
+    ],
+    "29a410863c73d6bf98f49edf9fbad1c65c6e1646db1504bd939196a0975dc766": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_2e8e27d7da07e3f6c31db5644028fd40b6505840426edd15d1eb855fd26ee9f9": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": "Route feasible",
+            "feedback_text": "The route is good. It would be nice that the tool suggest reaction conditions and give information about the precedence of the reactions as well"
+        },
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": "Route feasible",
+            "feedback_text": "The route is good. It would be nice that the tool suggest reaction conditions and give information about the precedence of the reactions as well"
+        }
+    ],
+    "99d015f8e33deb408f795114fa265b8ce5af6c63133f4c240ea5f49cb6adf2ef": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "601842f1002468c2da235792afad2ea20f299b79d946cede5d2832302d48135b": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "This reaction is feasible, BUT the suggestion of using formic acid is completely wrong. What we need here is a reductant. "
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "The reduction of -CN to -CHO is feasible but the proposed reagent for this transformation is totally wrong"
+        }
+    ],
+    "5321f60960b107cca6a51ed519a27e5b6ab21411e7d53e0b2b149cf6374f5e8d": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Probably the whole rout would be better if 3-formyl-indol were proposed instead of 3-CN-indole in this step"
+        }
+    ],
+    "d9755b89141acd5d649d1f4ff0122597b719fa7d80579949a6324cab0b52de17": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "5cdc1c357d7e2be674ac982449cf2d840985758a4ceec020f6126e011a60880e": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Nice reaction!"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_2e15ae198e7b513f06ac6d13f66ed259f16027ad9de83e90f2b1a55b577136a0": [
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "The route is feasible, but for the reduction of the nitrile to the aldehyde it did not suggest the right reagent. Formic acid must not be there."
+        },
+        {
+            "user_id": "b7ace304-0e95-48b2-96e4-122a60c67b3d",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "The route is feasible, but for the reduction of the nitrile to the aldehyde it did not suggest the right reagent. Formic acid must not be there.\n\nThe route could be shortened if 3-formylindol was suggested as starting material. That could bypass the suggested -CN to -CHO transformation"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "- The suggested reaction partner to effect the proposed nitrile reduction does not make sense.\n\n- Perhaps the tool should have suggested to use 3-formylindole instead of 3-CN-indole as starting material.\n\n"
+        }
+    ],
+    "5c6dd9becf86963a064ae02432b177a16b4f2207c3babe6e752d7b0a64bcb5b1": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "This transition metal mediated reaction could be inhibited by the substrate as it contains several heteroatoms arranged in 1,5-realtionship that could chelate the metal and stop catalysis"
+        }
+    ],
+    "4bfd47f1dfd7d3d03de903adf5af6517fa6a2cbed9c22d477c4b5afb7a731e2a": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues",
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "free amino groups in the guanidine substructure can react with NBS "
+        }
+    ],
+    "a59390d58522573efac621a507842f60a34d4ee28dd1c3386092cf0cfe6863ab": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "The guanidine moiety could be acylated as well"
+        }
+    ],
+    "83c67dc480520bf3bf3da6f3fd0ccabcab608c069dd9c2de8ced1be851633d6d": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "7a43bdb9384fff6ef2d5ea9bed7dadf9b42929fe75fd0d5c9da913c00dc45f4c": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "Even when there are specific reaction conditions for the mild reduction of nitriles, the guanidine moiety could be affected as well"
+        }
+    ],
+    "b5f0d6efaca8789a8f7d28acb60b1b9990b97a6d210de73b6fdd65e3271056b4": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "11ed91f4801aa431a047645f803286607823c7d3a1a14e753abcee95bc5696fb": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "312d21a5a597a4cdac09b73ec97a1a24fa632edeea0d8a95f27611f17a559347": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_c3377b9bc3f3548c5aab411714c8bcac2eb395824e374598325ada2560eade2a": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route was not solved to building blocks",
+            "feedback_text": "None"
+        }
+    ],
+    "1f5c34481bb634cf3e20e5d550203aaae6b43f74fc66526bd8f0125601426d94": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "2e7740d7a7891bace8ab3983a1cd7fa5dbe888c607322b09af20292d1fd80d1a": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_98dcb9fd68ea10c79781490a6dd90441db0b82a35d192a8273a64455987acc5b": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "None"
+        }
+    ],
+    "a9e0cac978720ec363ddf6a9193ce7352a6f55f141bd19f49476cc6d22dea6f6": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "513a4b23e5e9afb2b052c448edf052c4862e75b012f262c6cb20532ce47e5354": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "8ef1a458b1dcc01df49fe56050f790a04a48da1d7c3dece3448e54e2c736a0dd": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "acc8dc77cfbf9a548093fe4ebbd824fdbd447a38b9f946aa5751560c0acd4187": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "431d4c438621ad39d035674bd1aaa6e40199a8c32925288dc27d858968b7ef97": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "68669b21d9cef510609ac18f53a0e32733a1fa7702bfa03381a352b3ead3293e": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_6512b66f3209796500ca34beea63599f4d011e837b78b4410dfc4bdbf3dbedd7": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "None"
+        }
+    ],
+    "a22fd8283408cd0c44ae089956f0060a291d0d47224337c11511215b86a42516": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "2d0ef01aa227c3da18cfc84e8d79ba5432e17fc1366039b5a1d2588614b3a6b6": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues",
+                "Problems with reaction type and functional group compatibility",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "free amino groups would also be brominated, generating N-Br derivatives.\n\nIf the substitution of -OH to -Br works faster, it would be nevertheless a problem due to intramolecular SN2"
+        }
+    ],
+    "62586090b7c21dffdf2dc968c78788bbb738dae9a9ede1f1e7aa6603d4f9bba6": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "5f151bdae6486403d78ef6acb50a190227c2a6fe6264d5db104670b92f9cdca0": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Selectivity(regio-, stereo-, chemo-) issues"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_a10d5c4b72b0e2fed8a58296f9140a9a0102418502ee36114e91f6ec4f896133": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route unfeasible",
+            "feedback_text": "The intramolecular SN2 to close a 5 membered ring would be more favourable than the proposed intermolecular one.\n\nFor this strategy to work we need protecting groups."
+        }
+    ],
+    "3ab740b546cd4421a840ff000eacd481f34cc24246337bebc9fea17cb35c50e8": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "719252e456e3137a2832076c08509a014f1f713ead160e1c6f74c7996501604f": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [],
+            "feedback_text": "The amino group needs protection"
+        }
+    ],
+    "general_feedback_bb3dfbee5657d2411a13906a7b1f9cb7090a20abaa8831a3e553d205a02d2856": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route feasible with significant modifications",
+            "feedback_text": "None"
+        }
+    ],
+    "8c5ea146d998b718ad21ff505929cccc1f2ba099797f1dad4e2856aa02f560c9": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "the starting mesylate might not be an actual isolable intermediate as it would react intramolecularly with the pendant amine that is generated in the previous step."
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "the starting mesylate might not be an actual isolable intermediate as it would react intramolecularly with the pendant amine that is generated in the previous step.\n\nThe aniline group might need protection. "
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "the starting mesylate might not be an actual isolable intermediate as it would react intramolecularly with the pendant amine that is generated in the previous step.\n\nThe aniline group might need protection. "
+        }
+    ],
+    "1b3e857ca542ad75bd317d42279d6866d6d62efa22dcbb0731bf2e0c2ec21d71": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "The reaction is feasible, but it is more likely that the final product is the desired cyclohexylamine, rather than the intermediate secondary amine in the proposed scheme.\n\nI consider that the retrosynthesis tool should only show isolable intermediates. "
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "The reaction is feasible, but it is more likely that the final product is the desired cyclohexylamine, rather than the intermediate secondary amine in the proposed scheme.\n\nI consider that the retrosynthesis tool should only show isolable intermediates. \n\nas well, The aniline group might need protection. \n"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "The reaction is feasible, but it is more likely that the final product is the desired cyclohexylamine, rather than the intermediate secondary amine in the proposed scheme.\n\nI consider that the retrosynthesis tool should only show isolable intermediates. \n\nas well, The aniline group might need protection. \n"
+        }
+    ],
+    "ccd64bdf697e16f51b5a1a89c79d1e9abd1605f0b6705917939eb7ce82bade0e": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Selectivity(regio-, stereo-, chemo-) issues",
+                "Problems with reaction type and functional group compatibility",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "The aniline group might need protection. "
+        }
+    ],
+    "33cef9e576b26567d1395c55155c567aaf291958528c8f85868335ba05c72671": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "Feasible, but unnecessary transformation as the corresponding product is commercially available reagent"
+        }
+    ],
+    "c36154dea280772ccebdffc5a871d4358106face928c22ec399475a0a9dba88e": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "The aniline group might need protection. "
+        }
+    ],
+    "67342e89cf256506f2f86201d3cd378491660d19c746fa237fb6baf0a7df808c": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "The hydrazone and the nitro groups could be reduced concomitantly "
+        }
+    ],
+    "ab893909a2c8e0350ab55364b00200f30a400720f42ff38c7b9f358b1bd6c15a": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "unnecessary, but feasible"
+        }
+    ],
+    "general_feedback_ef880313a1d90383ff3cf09ae6f7d523b7bae78f4471896a8c8dff4a0d82830d": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route was not solved to building blocks",
+            "feedback_text": "This route has several issues and does not solved to building blocks"
+        }
+    ],
+    "6406f6bc50a8c11bd199f7efb97e928fa7d83f27ae28f615c5cbd1118bdc4484": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Unlikely disconnection",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "For this disconnection to work, we need to protect the secondary amine. Otherwise, the main product would be the corresponding regioisomer"
+        }
+    ],
+    "e020b833c52a09c2cdb4452c2a5919f72f6ab97e951413def597758b5074bf27": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility"
+            ],
+            "feedback_text": "Is there any reactivity prediction there? If not, I consider this step quite risky in terms of regioselectivy. The end result would be tow regioisomers and the double substitution as well"
+        }
+    ],
+    "0ab247956893f16b0e01530e6e28c43f0ab1bf473893a4645c5f62bac7c6e061": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "if the desired end result is the isopropylamine derivate, it would be better to alkylate the amine instead "
+        }
+    ],
+    "20e8e4e84341d4125c550c3600713870cea8acc1f5954dba7855212e664b79a9": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "c82f9e572049c3b18f9aa01e2e54aa588ca8c550a2d92d72bf7fc552cd7d345b": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good",
+                "Unnecessary step"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "0dd4697dda085f2257f748b647019a3e7bc891535873098d0c602dd2563481f2": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, unexpected disconnection"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "ed77718ce92faa01af9a3b3e5cad181bf22507fdc0dfb1180842698e7c3815de": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "18de45cb30b42c746f783d981ed2a00ed631e8ca69750c9fb8a6d193ca2a4d45": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_131af27c7bb0fcf2181bafce584e90441b1cb32b622ab27a4c3c1e507ff65015": [
+        {
+            "user_id": "1cef1c2a-8777-49c3-8ab5-c8db4b1fb5bc",
+            "feedback": "Route unfeasible",
+            "feedback_text": "The last step is not feasible"
+        }
+    ],
+    "9adb64aec42f442569c52b916935e6ab790682f5bcf63ea41e9f9d56846dd48e": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "It would be better to propose this ester exchange from the beginning of the route"
+        }
+    ],
+    "3e7e498fccb33584f19478d2cdbda11c3dfaeff3380f7f6e83c3a6c2146645da": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "47825577bde9cde6833b0c5404527504e912898c54a9b70985f4e65531300fcb": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "e1c846e295a864b25b3d1b9a8370577d7088213565e034d2c65c0cf555b1da4d": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "a3aa41078fd66914dfd829c2bb2e6500e1b7daf3e33be56ff50b58f587bd5cda": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "613d802dd6fa5d6000f7d005772afde64bbfd9cb3a9fd638ae7f862ca78bcd5d": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Problems with reaction type and functional group compatibility",
+                "Protecting group strategy is wrong / non-optimal"
+            ],
+            "feedback_text": "Turbo-Grignard reagents might be needed to perform this transformation. However the reaction has several problems"
+        }
+    ],
+    "b3d4c94014dcdd11ff60ed1ca529fa511d04b17f3c2331c6927ca50fa9893c55": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [],
+            "feedback_text": "Absolutely disastrous suggestion!!!!"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "Absolutely disastrous suggestion!!!!"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "Absolutely disastrous suggestion!!!!"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "Absolutely disastrous suggestion!!!!"
+        }
+    ],
+    "8bc7da3cbfcbee15e8783a6f3bc7128170d9917e972a8636d699e0d71c2c5471": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "imposible"
+        },
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "impossible"
+        }
+    ],
+    "caff54b4a9b1e5800997f3d501fe41eac5978184a98b638974a2e6eb85f456b3": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Unlikely disconnection"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "d0298681d44e5cadd45874cee8025fa71cfc6d8869979c9e891f7ed15632a25d": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "2e5fb5a62dde514f85186a8bedb1431ecd3adf3247c61140451840e12b7f58e1": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "bcaf61641a41e59b9aaca3c7cd6af581d4caf930b1a2dc865b0f4ed5c8d8f033": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_1019907b9cdaa1081965c92c58c66cfbb11f7f4c6e15ba16c7e3e095556684c4": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": "Route feasible",
+            "feedback_text": "None"
+        }
+    ],
+    "578fc9542c0bc5ea36d633c7dfc2621b990419aaccae369a229b48dec26fcd36": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "It might work if we push the phenoxide to open a plausible azetidinium ion generated by intramolecular SN2"
+        }
+    ],
+    "b43085692bdbca4f14f76388dbde169cb39c1cac97ebb93df06ce7599a999ec9": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": [
+                "Reaction feasible, all good"
+            ],
+            "feedback_text": "None"
+        }
+    ],
+    "general_feedback_029116b934474cf25cd18bdeff3a9da554ee3b8c689b827bb69353a0887d4da5": [
+        {
+            "user_id": "3935c91d-e2bc-4679-bf84-d3fef79c8032",
+            "feedback": "Route feasible with few modifications",
+            "feedback_text": "None"
+        }
+    ]
+}

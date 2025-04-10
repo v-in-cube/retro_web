@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Reaction Trees</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 10px;
+        }
+
+        .tree-container {
+            margin-bottom: 50px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow-x: auto; 
+            overflow: auto; 
+        }
+
+        .tree-container svg {
+            width: 100%;
+            height: 80vh;
+            display: block;
+            margin: auto;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+
+        text {
+            font-size: 12px;
+            fill: #333;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 2px;
+        }
+/*
+        .node circle {
+            fill: teal;
+            stroke: #fff;
+            stroke-width: 2px;
+        }
+*/
+        .node image {
+            cursor: pointer;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+/*
+        .feedback-container {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            max-width: 300px;
+        }
+        .feedback-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            width: 100%;
+        }
+        .feedback-container h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .feedback-container select,
+        .feedback-container textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .feedback-container textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .feedback-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .feedback-container button:hover {
+            background-color: #45A049;
+        }
+        .general-feedback-button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .general-feedback-button:hover {
+            background-color: #007B9A;
+        }
+        .general-feedback-button.active {
+            background-color: #4CAF50;
+        }
+        .general-feedback-button.feedback-sent {
+            background-color: orange;
+        }
+        .node-feedback-button {
+            width: 100px;
+            height: 30px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .node-feedback-button:hover {
+            background-color: #007B9A;
+        }
+        .node-feedback-button.active {
+            background-color: #4CAF50;
+        }
+        .node-feedback-button.feedback-sent {
+            background-color: orange;
+        }
+*/
+        .navigation-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .nav-button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav-button:hover {
+            background-color: #007B9A;
+        }
+        .nav-button:disabled {
+            background-color: #CCCCCC;
+            cursor: not-allowed;
+        }
+        .image-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: None;
+            z-index: 999;
+        }
+
+        .large-image {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .large-image img {
+            max-width: 80vw;
+            max-height: 80vh;
+            object-fit: contain;
+        }
+
+        .node image {
+            cursor: pointer;
+        }
+        .molecule-image {
+            cursor: pointer;
+        }
+        #large-image-container {
+            cursor: pointer;
+        }
+        #large-image-container img {
+            cursor: default;
+        }
+        .feedback-form {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 1000;
+            max-width: 300px;
+            width: 100%;
+        }
+        .feedback-form h3 {
+            margin-top: 0;
+        }
+        .feedback-form form > div {
+            margin-bottom: 10px;
+        }
+        .feedback-form textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .feedback-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .node-feedback-button {
+            width: 100px;
+            height: 30px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .general-feedback-button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .node-feedback-button.active, .general-feedback-button.active {
+            background-color: #4CAF50;
+        }
+        .node-feedback-button.feedback-sent, .general-feedback-button.feedback-sent {
+            background-color: orange;
+        }    
+        .reaction-image-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .reaction-image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .copy-smiles-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .copy-smiles-button:hover {
+            background-color: #45A049;
+        }
+    </style>
+</head>
+<body>
+    <div id="trees-container"></div>
+<!--
+    <div class="feedback-container" id="feedback-container" style="display: none;">
+        <label for="feedback-select">Feedback:</label>
+        <select id="feedback-select">
+            <option value="Feasible">Feasible</option>
+            <option value="Unfeasible">Unfeasible</option>
+            <option value="Other">Other</option>
+        </select>
+        <textarea id="feedback-text" placeholder="Why? (Optional)"></textarea>
+    <button id="submit-feedback">Submit Feedback</button>
+    </div>
+
+    <div id="general-feedback-container" class="feedback-container" style="display: none;">
+        <h3>General Feedback</h3>
+        <select id="general-feedback-select">
+            <option value="Route feasible">Route feasible</option>
+            <option value="Route unfeasible">Route unfeasible</option>
+            <option value="Other">Other</option>
+        </select>
+        <textarea id="general-feedback-text" placeholder="Why? (Optional)"></textarea>
+        <button id="submit-general-feedback">Submit General Feedback</button>
+    </div>
+-->   
+<div id="feedback-container" class="feedback-form" style="display: none;">
+    <h3>Feedback</h3>
+    <form id="feedback-form">
+      <div>
+        <input type="checkbox" id="feedback-option1" name="feedback" value="Reaction feasible, all good">
+        <label for="feedback-option1">Reaction feasible, all good</label>
+      </div>
+      <div>
+        <input type="checkbox" id="feedback-option2" name="feedback" value="Reaction feasible, unexpected disconnection">
+        <label for="feedback-option1">Reaction feasible, unexpected disconnection</label>
+      </div>
+      <div>
+        <input type="checkbox" id="feedback-option3" name="feedback" value="Unlikely disconnection">
+        <label for="feedback-option2">Unlikely disconnection</label>
+      </div>
+      <div>
+        <input type="checkbox" id="feedback-option4" name="feedback" value="Selectivity(regio-, stereo-, chemo-) issues">
+        <label for="feedback-option2">Selectivity (regio-, stereo-, chemo-) issues</label>
+      </div>
+      <div>
+        <input type="checkbox" id="feedback-option5" name="feedback" value="Problems with reaction type and functional group compatibility">
+        <label for="feedback-option2">Problems with reaction type and functional group compatibility</label>
+      </div>
+      <div>
+        <input type="checkbox" id="feedback-option6" name="feedback" value="Protecting group strategy is wrong / non-optimal">
+        <label for="feedback-option2">Protecting group strategy is wrong / non-optimal</label>
+      </div>
+      <div>
+        <input type="checkbox" id="feedback-option7" name="feedback" value="Unnecessary step">
+        <label for="feedback-option2">Unnecessary step</label>
+      </div>
+      <textarea id="feedback-text" placeholder="Additional comments"></textarea>
+      <button type="submit" id="submit-feedback">Submit Feedback</button>
+    </form>
+  </div>
+  <div id="general-feedback-container" class="feedback-form" style="display: none;">
+    <h3>General Route Feasibility Feedback</h3>
+    <form id="general-feedback-form">
+      <div>
+        <input type="radio" id="general-feedback-feasible" name="general-feedback" value="Route feasible" checked>
+        <label for="general-feedback-feasible">Route feasible as it is</label>
+      </div>
+      <div>
+        <input type="radio" id="general-feedback-feasible1" name="general-feedback" value="Route feasible with few modifications">
+        <label for="general-feedback-unfeasible">Route feasible with few modifications</label>
+      </div>
+      <div>
+        <input type="radio" id="general-feedback-feasible2" name="general-feedback" value="Route feasible with significant modifications">
+        <label for="general-feedback-unfeasible">Route feasible with significant modifications</label>
+      </div>
+      <div>
+        <input type="radio" id="general-feedback-unfeasible" name="general-feedback" value="Route unfeasible">
+        <label for="general-feedback-other">Route unfeasible</label>
+      </div>
+      <div>
+        <input type="radio" id="general-feedback-unfeasible1" name="general-feedback" value="Route was not solved to building blocks">
+        <label for="general-feedback-other">Route was not solved to building blocks</label>
+      </div>
+      <textarea id="general-feedback-text" placeholder="Additional comments"></textarea>
+      <button type="submit" id="submit-general-feedback">Submit General Feedback</button>
+    </form>
+  </div>
+<script>
+        let currentTreeIndex = 0;
+        let allTrees = [];
+        let selectedNode = null;
+        let feedbackState = {};  // To store the state of feedback buttons
+//        let userId = null;
+        // Load JSON data containing multiple trees from Flask API
+        const userId = localStorage.getItem('user_id');
+        if (!userId) {
+            window.location.href = '/';  // Redirect to intro if no user_id
+        } else {
+            d3.json(`/get_user_trees?user_id=${userId}`).then(data => {
+                allTrees = data.trees;
+                renderTree(allTrees[currentTreeIndex], currentTreeIndex);
+                renderNavigationControls();
+                setupFeedbackForm();
+            });
+        }
+        
+            function renderNavigationControls() {
+                const container = d3.select("#trees-container");
+                // Remove existing navigation container if it exists
+                container.select(".navigation-container").remove();
+                // Add navigation buttons
+                const navContainer = container.append("div")
+                    .attr("class", "navigation-container")
+                    .style("position", "fixed")
+                    .style("bottom", "20px")
+                    .style("left", "50%")
+                    .style("transform", "translateX(-50%)");
+
+                navContainer.append("button")
+                    .attr("class", "nav-button prev")
+                    .text("Previous")
+                    .on("click", () => {
+                        if (currentTreeIndex > 0) {
+                            currentTreeIndex--;
+                            renderTree(allTrees[currentTreeIndex], currentTreeIndex);
+                            updateNavigationControls();
+                            updateFeedbackButtonStates(currentTreeIndex);
+                        }
+                    });
+
+                navContainer.append("span")
+                    .attr("class", "page-indicator")
+                    .text(`${currentTreeIndex + 1}/${allTrees.length}`);
+
+
+                navContainer.append("button")
+                    .attr("class", "nav-button next")
+                    .text("Next")
+                    .on("click", () => {
+                        if (currentTreeIndex < allTrees.length - 1) {
+                            currentTreeIndex++;
+                            renderTree(allTrees[currentTreeIndex], currentTreeIndex);
+                            updateNavigationControls();
+                            updateFeedbackButtonStates(currentTreeIndex);
+                        }
+                    });
+            }
+            function updateNavigationControls() {
+                const prevButton = d3.select(".nav-button.prev");
+                const nextButton = d3.select(".nav-button.next");
+                const pageIndicator = d3.select(".page-indicator");
+                prevButton
+                    .property("disabled", currentTreeIndex === 0)
+                    .style("opacity", currentTreeIndex === 0 ? 0.5 : 1);
+                nextButton
+                    .property("disabled", currentTreeIndex === allTrees.length - 1)
+                    .style("opacity", currentTreeIndex === allTrees.length - 1 ? 0.5 : 1);
+                pageIndicator.text(`${currentTreeIndex + 1}/${allTrees.length}`);
+            }
+
+            function renderTree(treeData, index) {
+                const container = d3.select("#trees-container");
+                container.selectAll(".tree-container").remove(); // Clear previous tree
+                const treeContainer = container.append("div")
+                    .attr("class", "tree-container")
+                    .attr("id", `tree-${index}`);
+
+                // Set dimensions for the tree
+                const width = container.node().getBoundingClientRect().width;
+                const height = Math.max(500, window.innerHeight * 0.8); // Use at least 80% of the window height
+                const margin = { top: 40, right: 120, bottom: 40, left: 120 };
+
+                const svg = treeContainer.append("svg")
+                    .attr("width", width)
+                    .attr("height", height);
+
+                const g = svg.append("g")
+                    .attr("transform", `translate(${margin.left},${margin.top})`);
+                const reactionImageGroup = svg.append("g").attr("class", "reaction-image-group");
+                // Tree layout
+                const treeLayout = d3.tree()
+                    .size([height - margin.top - margin.bottom, width - margin.left - margin.right])
+                    .separation((a, b) => (a.parent == b.parent ? 4 : 6));
+
+                const root = d3.hierarchy(treeData);
+
+                // Compute the tree layout
+                treeLayout(root);
+                root.descendants().forEach(d=>d.y = width - margin.left - margin.right - d.y);
+                // Calculate image size based on available space
+                const nodeCount = root.descendants().length;
+                const availableArea = (width - margin.left - margin.right) * (height - margin.top - margin.bottom);
+                const areaPerNode = availableArea / nodeCount;
+                const baseImageSize = 100;
+                const minImageSize = 100;
+                const maxImageSize = 400
+                const calculatedImageSize = Math.min(maxImageSize, Math.max(minImageSize, Math.sqrt(areaPerNode) * 0.6));
+                console.log("calc size", calculatedImageSize);
+    
+                // Find the closest available image size
+                const availableSizes = [100, 200, 300, 400]; // Add all sizes that your backend generates
+                const imageSize = availableSizes.reduce((prev, curr) =>
+                    Math.abs(curr - calculatedImageSize) < Math.abs(prev - calculatedImageSize) ? curr : prev
+                );
+                console.log("selected size", imageSize);
+                // Adjust overlapping molecules
+                adjustOverlappingMolecules(root.descendants(), imageSize);
+
+                // Calculate the bounds of the tree
+                let minX = Infinity, maxX = -Infinity;
+                root.each(d => {
+                    minX = Math.min(minX, d.x);
+                    maxX = Math.max(maxX, d.x);
+                });
+
+                // Calculate vertical centering adjustment
+                const verticalAdjustment = (height - (maxX - minX)) / 2 - minX;
+
+                // Adjust all node positions
+                root.each(d => d.x += verticalAdjustment);
+
+                // Links
+                g.selectAll(".link")
+                    .data(root.links())
+                    .enter()
+                    .append("path")
+                    .attr("class", "link")
+                    .attr("d", d3.linkHorizontal()
+                        .x(d => d.y)
+                        .y(d => d.x)
+                    );
+
+                // Nodes
+                const node = g.selectAll(".node")
+                    .data(root.descendants())
+                    .enter()
+                    .append("g")
+                    .attr("class", d => `node ${d.data.type}`)
+                    .attr("transform", d => `translate(${d.y},${d.x})`);
+
+                // Display molecule image for molecule nodes
+                const moleculeNode = node.filter(d => d.data.type === "mol");
+                moleculeNode.append("image")
+                    .attr("xlink:href", d => d.data.image_path)
+                    .attr("x", -imageSize / 2)
+                    .attr("y", -imageSize / 2)
+                    .attr("width", imageSize)
+                    .attr("height", imageSize)
+                    .on("mouseover", handleMouseOver)
+                    .on("mouseout", handleMouseOut)
+                    .on("click", handleClick)
+                    .on("dblclick", handleDoubleClick);  
+
+
+                // Add reaction node text and make it a clickable area for branching
+                const reactionNode = node.filter(d => d.data.type === "reaction");
+
+                reactionNode.append("circle")
+                    .attr("r", 10)
+                    .attr("fill", "teal");
+
+                    // Add reaction image (initially hidden)
+                reactionImageGroup.selectAll(".reaction-image")
+                    .data(root.descendants().filter(d => d.data.type === "reaction"))
+                    .enter()
+                    .append("image")
+                    .attr("class", "reaction-image")
+                    .attr("xlink:href", d => d.data.image_path)
+                    .attr("x", d => d.y - 80)  // Increased size and centered
+                    .attr("y", d => d.x - 80)  // Increased size and centered
+                    .attr("width", 300)  // Increased size
+                    .attr("height", 300)  // Increased size
+                    .style("display", "none")
+                    .style("pointer-events", "none");
+                // Add click event to toggle reaction image and show SMILES button
+                reactionNode.on("click", function(event, d) {
+                    event.stopPropagation();
+                    showReactionImage(d);
+                });
+                function showReactionImage(d) {
+                    // Remove any existing reaction image container
+                    d3.select(".reaction-image-container").remove();
+                    // Create a new reaction image container
+                    const reactionImageContainer = d3.select("body")
+                        .append("div")
+                        .attr("class", "reaction-image-container");
+                    // Add the reaction image
+                    reactionImageContainer.append("img")
+                        .attr("src", d.data.image_path)
+                        .attr("width", 500)
+                        .attr("height", 250);
+                        // Add the classification text
+                    reactionImageContainer.append("p")
+                        .attr("class", "reaction-classification")
+                        .text(d.data.metadata.classification || "Classification not available");
+                    // Add the "Copy SMILES" button
+                    reactionImageContainer.append("button")
+                        .attr("class", "copy-smiles-button")
+                        .text("Copy SMILES")
+                        .on("click", function(event) {
+                            event.stopPropagation();
+                            navigator.clipboard.writeText(d.data.smiles)
+                                .then(() => alert("SMILES copied to clipboard!"))
+                                .catch(err => console.error('Failed to copy SMILES: ', err));
+                        });
+                    // Add click event to hide the reaction image when clicking outside
+                    d3.select("body").on("click.hideReactionImage", hideReactionImage);
+                    // Prevent hiding when clicking inside the container
+                    reactionImageContainer.on("click", function(event) {
+                        event.stopPropagation();
+                    });
+                }
+                function hideReactionImage() {
+                    d3.select(".reaction-image-container").remove();
+                    d3.select("body").on("click.hideReactionImage", null); // Remove the event listener
+                }
+
+
+                // Add feedback button for reaction nodes
+                reactionNode.append("foreignObject")
+                    .attr("class", "feedback-button")
+                    .attr("x", -50)
+                    .attr("y", 40)
+                    .attr("width", 100)
+                    .attr("height", 40)
+                    .append("xhtml:button")
+                    .attr("class", "node-feedback-button")
+                    .style("width", "100px")
+                    .style("height", "30px")
+                    .text("Feedback")
+                    .on("click", function(event, d) {
+                        event.stopPropagation();
+                        handleFeedbackButtonClick(this, d);
+                    });
+
+                // Add general feedback button for the entire tree
+                treeContainer.append("button")
+                    .attr("class", "general-feedback-button")
+                    .text("General Route Feedback")
+                    .on("click", function() {
+                        handleGeneralFeedbackButtonClick(this, root.data);
+                    });
+
+                // Update navigation button states
+                updateFeedbackButtonStates(index);
+            
+            }
+            function adjustOverlappingMolecules(nodes, imageSize) {
+                const nodesByParent = {};
+                nodes.forEach(node => {
+                    if (node.data.type === "mol" && node.parent) {
+                        const parentId = node.parent.data.hash;
+                        if (!nodesByParent[parentId]) {
+                            nodesByParent[parentId] = [];
+                        }
+                        nodesByParent[parentId].push(node);
+                    }
+                });
+                Object.values(nodesByParent).forEach(siblings => {
+                    if (siblings.length > 1) {
+                        siblings.sort((a, b) => a.x - b.x);
+                        const minSeparation = imageSize * 0.2;  // 20% of image size as minimum separation
+                        for (let i = 1; i < siblings.length; i++) {
+                            const prevNode = siblings[i-1];
+                            const currentNode = siblings[i];
+                            const overlap = (prevNode.x + imageSize + minSeparation) - currentNode.x;
+                            if (overlap > 0) {
+                                currentNode.x += overlap;
+                            }
+                        }
+                    }
+                });
+            }
+            
+            function getPreferredImagePath(d, size) {
+                const paths = d.data.merged_image_paths || d.data.highlighted_image_paths || d.data.image_paths;
+                const availableSizes = Object.keys(paths).map(Number);
+                const preferredSize = size ?
+                    availableSizes.reduce((prev, curr) => Math.abs(curr - size) < Math.abs(prev - size) ? curr : prev) :
+                    Math.max(...availableSizes);
+                if (d.data.merged_image_paths && d.data.merged_image_paths[preferredSize]) {
+                    return d.data.merged_image_paths[preferredSize];
+                } else if (d.data.highlighted_image_paths && d.data.highlighted_image_paths[preferredSize]) {
+                    return d.data.highlighted_image_paths[preferredSize];
+                } else {
+                    return d.data.image_paths[preferredSize];
+                }
+            }
+            function handleMouseOver(event, d) {
+                if (d.data.has_multiple_images && !d.data.clicked) {
+                    const hoveredImagePath = getPreferredImagePath(d);
+                    d3.select(this).attr("xlink:href", hoveredImagePath);
+                }
+            }
+            function handleMouseOut(event, d) {
+                if (d.data.has_multiple_images && !d.data.clicked) {
+                    //const defaultImagePath = getPreferredImagePath(d);
+                    d3.select(this).attr("xlink:href", d.data.image_path);
+                }
+            }
+            function handleClick(event, d) {
+                if (d.data.has_multiple_images) {
+                    d.data.clicked = !d.data.clicked;
+                    const clickedImagePath = getPreferredImagePath(d);
+                    d3.select(this).attr("xlink:href", clickedImagePath);
+                }
+            }
+            function handleDoubleClick(event, d) {
+                if (d.data.has_multiple_images) {
+                    const largeImagePath = getPreferredImagePath(d);
+                    showLargeImage(largeImagePath);
+                }
+                // Prevent the click event from firing
+                event.stopPropagation();
+            }
+            function showLargeImage(imagePath) {
+                // Remove any existing large image
+                d3.select("#large-image-container").remove();
+                // Create a container for the large image
+                const container = d3.select("body")
+                    .append("div")
+                    .attr("id", "large-image-container")
+                    .style("position", "fixed")
+                    .style("top", 0)
+                    .style("left", 0)
+                    .style("width", "100%")
+                    .style("height", "100%")
+                    .style("background-color", "rgba(0,0,0,0.8)")
+                    .style("display", "flex")
+                    .style("justify-content", "center")
+                    .style("align-items", "center")
+                    .style("z-index", 1000)
+                    .on("click", () => d3.select("#large-image-container").remove());
+                // Add the large image
+                container.append("img")
+                    .attr("src", imagePath)
+                    .style("max-width", "90%")
+                    .style("max-height", "90%")
+                    .style("object-fit", "contain")
+                    .on("click", (event) => event.stopPropagation());
+            }
+
+            function updateFeedbackButtonStates(treeIndex) {
+                // Update node-specific feedback buttons
+                d3.selectAll(".node-feedback-button")
+                    .each(function(d) {
+                        const state = feedbackState[d.data.hash];
+                        if (state) {
+                            d3.select(this)
+                                .classed("active", state.active)
+                                .classed("feedback-sent", state.feedbackSent)
+                                .style("background-color", state.feedbackSent ? "orange" : (state.active ? "#4CAF50" : null));
+                        }
+                    });
+                // Update general feedback button
+                const generalState = feedbackState[`general_${treeIndex}`];
+                if (generalState) {
+                    d3.select(".general-feedback-button")
+                        .classed("active", generalState.active)
+                        .classed("feedback-sent", generalState.feedbackSent)
+                        .style("background-color", generalState.feedbackSent ? "orange" : (generalState.active ? "#4CAF50" : null));
+                }
+            }
+            function handleFeedbackButtonClick(button, d) {
+                const feedbackContainer = document.getElementById("feedback-container");
+                selectedNode = d.data;
+                // Show the feedback form
+                feedbackContainer.style.display = "block";
+                // Set form values if feedback exists
+                const existingFeedback = feedbackState[selectedNode.hash];
+                if (existingFeedback) {
+                    const checkboxes = document.querySelectorAll('input[name="feedback"]');
+                    checkboxes.forEach(cb => {
+                        cb.checked = existingFeedback.feedback.includes(cb.value);
+                    });
+                    const feedbackText = document.getElementById("feedback-text");
+                    feedbackText.value = existingFeedback.feedback_text && existingFeedback.feedback_text !== "None"
+                        ? existingFeedback.feedback_text
+                        : "";
+                    feedbackText.placeholder = "Additional comments (optional)";
+                } else {
+                    // Reset the form
+                    document.getElementById("feedback-form").reset();
+                    document.getElementById("feedback-text").value = "";
+                    document.getElementById("feedback-text").placeholder = "Additional comments (optional)";
+                }
+                // Close feedback form when clicking outside
+                document.addEventListener("click", closeFeedbackForm);
+            }
+
+            function handleGeneralFeedbackButtonClick(button, rootData) {
+                const generalFeedbackContainer = document.getElementById("general-feedback-container");
+                selectedNode = rootData;
+                
+                // Show the general feedback form
+                generalFeedbackContainer.style.display = "block";
+                
+                // Set form values if feedback exists
+                const existingFeedback = feedbackState[`general_${currentTreeIndex}`];
+                if (existingFeedback) {
+                    document.querySelector(`input[name="general-feedback"][value="${existingFeedback.feedback}"]`).checked = true;
+                    const generalFeedbackText = document.getElementById("general-feedback-text");
+                    generalFeedbackText.value = existingFeedback.feedback_text && existingFeedback.feedback_text !== "None" 
+                        ? existingFeedback.feedback_text 
+                        : "";
+                    generalFeedbackText.placeholder = "Why? (Optional)";
+                } else {
+                    // Reset the form
+                    document.getElementById("general-feedback-form").reset();
+                    document.getElementById("general-feedback-text").value = "";
+                    document.getElementById("general-feedback-text").placeholder = "Why? (Optional)";
+                }
+                
+                // Close general feedback form when clicking outside
+                document.addEventListener("click", closeGeneralFeedbackForm);
+            }
+            function closeFeedbackForm(event) {
+                const feedbackContainer = document.getElementById("feedback-container");
+                if (!feedbackContainer.contains(event.target) && event.target !== document.querySelector(".node-feedback-button")) {
+                    feedbackContainer.style.display = "none";
+                    document.removeEventListener("click", closeFeedbackForm);
+                }
+            }
+            function closeGeneralFeedbackForm(event) {
+                const generalFeedbackContainer = document.getElementById("general-feedback-container");
+                if (!generalFeedbackContainer.contains(event.target) && event.target !== document.querySelector(".general-feedback-button")) {
+                    generalFeedbackContainer.style.display = "none";
+                    document.removeEventListener("click", closeGeneralFeedbackForm);
+                }
+            }
+
+            function showLargeImage(imagePath) {
+                const body = d3.select("body");
+                
+                // Remove existing overlay and large image if any
+                body.selectAll(".image-overlay, .large-image").remove();
+
+                // Add overlay
+                const overlay = body.append("div")
+                    .attr("class", "image-overlay")
+                    .on("click", hideLargeImage);
+
+                // Add large image
+                const largeImage = body.append("div")
+                    .attr("class", "large-image")
+                    .on("click", function(event) {
+                        event.stopPropagation(); // Prevent click from reaching overlay
+                    });
+
+                largeImage.append("img")
+                    .attr("src", imagePath);
+            }
+            function hideLargeImage() {
+                d3.select(".image-overlay, .large-image").remove();
+                d3.select(".image-overlay, .large-image").style("display", "none");
+            }
+            
+            
+// Feedback form logic
+function setupFeedbackForm() {
+    const feedbackForm = document.getElementById("feedback-form");
+    const generalFeedbackForm = document.getElementById("general-feedback-form");
+    feedbackForm.onsubmit = function(event) {
+        event.preventDefault();
+        const checkedBoxes = document.querySelectorAll('input[name="feedback"]:checked');
+        const feedbackValues = Array.from(checkedBoxes).map(cb => cb.value);
+        const feedbackTextValue = document.getElementById("feedback-text").value;
+        if (selectedNode) {
+            console.log("Feedback submitted for node:", selectedNode);
+            // Send feedback to the server
+            fetch("/submit_feedback", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    user_id: userId,
+                    node: {
+                        hash: selectedNode.hash,
+                        feedback: feedbackValues,
+                        feedback_text: feedbackTextValue || "None"
+                    }
+                }),
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log(result.message);
+                document.getElementById("feedback-container").style.display = "none";
+                // Update feedback state
+                feedbackState[selectedNode.hash] = {
+                    active: false,
+                    feedbackSent: true,
+                    feedback: feedbackValues,
+                    feedback_text: feedbackTextValue || "None"
+                };
+                updateFeedbackButtonStates(currentTreeIndex);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    };
+
+    generalFeedbackForm.onsubmit = function(event) {
+        event.preventDefault();
+        const feedbackValue = document.querySelector('input[name="general-feedback"]:checked').value;
+        const feedbackTextValue = document.getElementById("general-feedback-text").value;
+        if (selectedNode) {
+            console.log("General feedback submitted for route:", selectedNode);
+            // Send general feedback to the server
+            fetch("/submit_general_feedback", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    user_id: userId,
+                    node: {
+                        root_hash: selectedNode.hash, 
+                        general_feedback: feedbackValue,
+                        general_feedback_text: feedbackTextValue || "None"
+                    }
+                }),
+            })
+            .then(response => response.json())
+            .then(result => {
+                console.log(result.message);
+                document.getElementById("general-feedback-container").style.display = "none";
+                // Update general feedback state
+                feedbackState[`general_${currentTreeIndex}`] = {
+                    active: false,
+                    feedbackSent: true,
+                    feedback: feedbackValue,
+                    feedback_text: feedbackTextValue || "None"
+                };
+                updateFeedbackButtonStates(currentTreeIndex);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    };
+
+    // Set initial placeholders
+    document.getElementById("feedback-text").placeholder = "Additional comments (optional)";
+    document.getElementById("general-feedback-text").placeholder = "Why? (Optional)";
+}
+
+    </script>
+</body>
+</html>
